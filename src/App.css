@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.Yeezy {
+  width: 10rem;
+  height: auto;
+  border-radius: 100%;
+}
+
+.new-quote {
+  border-radius: 0;
+  border-style: none;
+  background-color: lightgreen;
+  width: 7rem;
+  height: 4rem;
+  font-size: large;
+}
+
+.author {
+  font-size: large;
+}
