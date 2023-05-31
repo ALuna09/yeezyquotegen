@@ -7,7 +7,7 @@ function App() {
   const [kanyeQuote, setKanyeQuote] = useState('');
 
   const grabQuote = () => {
-    fetch('http://localhost:8080/')
+    fetch('http://localhost:8080/poop')
       .then(res => res.json())
       .then(data => {
         console.log(data)
