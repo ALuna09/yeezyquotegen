@@ -1,21 +1,28 @@
 const Quote = (props) => {
-    const {kanyeQuote, setKanyeQuote} = props;
-
+    const {kanyeQuote, grabQuote} = props;
+    
     return (
         <div>
             <p
-                className="text"
+                id="text"
             >
-                {kanyeQuote}
+                "{kanyeQuote}"
             </p>
             <p
-                className="author"
+                id="author"
             >
                 - Kanye West
             </p>
+            <a
+                id="tweet-quote"
+                href="https://twitter.com/intent/tweet"
+                target="_blank"
+            >
+              Tweet Quote  
+            </a>
             <button
-                className="new-quote"
-                onClick={() => setKanyeQuote('')}
+                id="new-quote"
+                onClick={() => grabQuote()}
             >
                 New Quote
             </button>

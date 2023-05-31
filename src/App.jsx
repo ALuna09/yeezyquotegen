@@ -6,14 +6,18 @@ import './App.css';
 function App() {
   const [kanyeQuote, setKanyeQuote] = useState('');
 
-  useEffect(() => {
+  const grabQuote = () => {
     fetch('http://localhost:8080/')
       .then(res => res.json())
       .then(data => {
         console.log(data)
         return setKanyeQuote(data.quote)
       })
-      .catch(err => console.log(err))
+      .catch(err => console.error(err))
+  }
+
+  useEffect(() => {
+    grabQuote();
   }, [])
 
   return (
@@ -23,13 +27,12 @@ function App() {
         src={headshot}
         alt="Kanye's Headshot"
       ></img>
-      <span id="quote-box">
+      <main id="quote-box">
         <Quote 
           kanyeQuote={kanyeQuote}
-          setKanyeQuote={setKanyeQuote}
+          grabQuote={grabQuote}
         />
-        {/* <NewQuote /> */}
-      </span>
+      </main>
     </div>
   );
 }
