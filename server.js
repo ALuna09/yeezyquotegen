@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
     res.sendFile(`${__dirname}/build/index.html`)
 })
 
-app.get('/poop', (req, res) => {
+app.get('/quotes', (req, res) => {
     fetch('https://api.kanye.rest')
         .then(response => response.json())
         .then(data => {
