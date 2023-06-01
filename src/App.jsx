@@ -7,7 +7,7 @@ function App() {
   const [kanyeQuote, setKanyeQuote] = useState('');
 
   const grabQuote = () => {
-    fetch('/quotes')
+    fetch('http://localhost:8080/quotes')
       .then(res => res.json())
       .then(data => {
         console.log(data)

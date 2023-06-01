@@ -8,8 +8,6 @@ app.use(cors());
 
 app.use(express.static(path.join(__dirname, "build")))
 
-console.log('');
-
 app.get('/', (req, res) => {
     res.sendFile(`${__dirname}/build/index.html`)
 })
