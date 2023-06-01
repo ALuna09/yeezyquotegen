@@ -43,5 +43,6 @@
   },
   "devDependencies": {
     "gh-pages": "^5.0.0"
-  }
+  },
+  "homepage": "http://aluna09.github.io/yeezyquotegen"
 }
