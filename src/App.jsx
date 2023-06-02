@@ -7,10 +7,11 @@ function App() {
   const [kanyeQuote, setKanyeQuote] = useState('');
 
   const grabQuote = () => {
-    fetch('http://localhost:8080/quotes')
-      .then(res => res.json())
+    fetch('https://api.kanye.rest')
+      .then(res => {
+        return res.json()
+      })
       .then(data => {
-        console.log(data)
         return setKanyeQuote(data.quote)
       })
       .catch(err => console.error(err))
