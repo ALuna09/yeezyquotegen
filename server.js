@@ -16,7 +16,6 @@ app.get('/quotes', (req, res) => {
     fetch('https://api.kanye.rest')
         .then(response => response.json())
         .then(data => {
-            // console.log(data);
             res.send(data);
         })
         .catch(err => console.error(err))
