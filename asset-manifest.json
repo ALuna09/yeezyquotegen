@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/yeezyquotegen/static/css/main.d7a2a0cb.css",
-    "main.js": "/yeezyquotegen/static/js/main.b7ee5666.js",
+    "main.js": "/yeezyquotegen/static/js/main.4d93a5be.js",
     "static/media/kanye-west-headshot.jpg": "/yeezyquotegen/static/media/kanye-west-headshot.28a03473b4874d3d4bd0.jpg",
     "index.html": "/yeezyquotegen/index.html",
     "main.d7a2a0cb.css.map": "/yeezyquotegen/static/css/main.d7a2a0cb.css.map",
-    "main.b7ee5666.js.map": "/yeezyquotegen/static/js/main.b7ee5666.js.map"
+    "main.4d93a5be.js.map": "/yeezyquotegen/static/js/main.4d93a5be.js.map"
   },
   "entrypoints": [
     "static/css/main.d7a2a0cb.css",
-    "static/js/main.b7ee5666.js"
+    "static/js/main.4d93a5be.js"
   ]
 }
